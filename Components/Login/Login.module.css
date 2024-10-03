@@ -1,0 +1,84 @@
+.login {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url('../../src/assets/backgroung_iphone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 230px;
+    
+}
+
+.login__form {
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    width: 1000px;
+    margin-left: 80px;
+    /* border: none; */
+}
+.login__form h1{
+    font-size: 80px;
+    font-weight:400;
+    line-height: 88px;
+    width: 600px;
+}
+
+.customSelect {
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.selectedItem {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    z-index: 10;
+    margin-top: 10px;
+}
+
+.dropdownItem {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: gray;
+}
+
+.dropdownItem:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdownItem p {
+    color: #fff;
+}
+.iphone {
+    
+    /* width: 500px;
+    height: 700px; */
+    /* background: url('../../src/assets/iPhoneB.png'); */
+    width: 100vw;
+    margin-left: -250px;
+    height: 100vh;
+}
+.iphone img {
+    margin-top: 125px;
+    /* margin-right: 100px; */
+
+} 
