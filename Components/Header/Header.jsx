@@ -90,7 +90,7 @@ function Header() {
             </div>
             <div className={classes.background__container}>
                 <img src={background} alt="background" />
-                <div className={classes.content__container}>
+                <div className={isTransform? classes.content__container : classes.content__Transform}>
                     <div className={classes.content__left}>
                         <div className={isTransform ? classes.left__topTransform : classes.left__top}>
                             <div className={classes.left__top__bar}>

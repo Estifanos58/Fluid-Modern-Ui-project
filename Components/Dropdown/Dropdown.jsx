@@ -62,7 +62,7 @@ function Dropdown() {
                     {
                     data?.map((datavalue)=>(
                         <div key={datavalue.id} className={classes.item}>
-                            <p>{datavalue.title} <span onClick={()=> handleClick(datavalue.id)}>+</span></p>
+                            <p>{datavalue.title} <span onClick={()=> handleClick(datavalue.id)}>{count === datavalue.id ? '-': '+'}</span></p>
                             
                             
                             {

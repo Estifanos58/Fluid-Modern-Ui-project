@@ -3,16 +3,18 @@ import Phone from "../Components/Phone/Phone"
 import Galary from "../Components/Galary/Galary"
 import Dropdown from "../Components/Dropdown/Dropdown"
 import Login from "../Components/Login/Login"
+import Footer from "../Components/Footer/Footer"
 function App() {
 
 
   return (
   <div>
-    {/* <Header />
+    <Header />
     <Phone />
-    <Galary /> */}
-    {/* <Dropdown /> */}
+    <Galary />
+    <Dropdown />
     <Login />
+    <Footer />
   </div>
   )
 }

@@ -1,5 +1,6 @@
 .header {
     width: 100%;
+    overflow: hidden;
 }
 
 .logo__container {
@@ -38,6 +39,9 @@
     position: absolute;
     top: 900px;
 }
+.content__Transform {
+    overflow: unset;
+}
 .content__left {
     position: relative;
 }
@@ -59,6 +63,7 @@
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 56.61%, #000000 134.98%), url('/src/assets/image.png');
     /* transform: translate(270px, 0px); */
     transition: margin-left 1s ease-in-out; 
+    overflow: unset;
 }
 
 .left__top__bar {
@@ -186,14 +191,15 @@
 .content__center {
 position: absolute;
 top: 500px;
+margin-top: 1000px;
 left: 600px;
 }
 .center__Transform{
     position: absolute;
     width: 750px;
-    top: 240px;
+    margin-top: 0;
     left: 600px;
-    transition: top 1s ease-in-out;
+    transition: margin-top 1s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,0 +1,22 @@
+.footer {
+    width: 100vw;
+    height: 427px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+.footer p{
+    color: grey;
+    margin: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.footer__left img {
+    width: 207px;
+    margin-bottom: 20px;
+}
+.footer__right {
+    display: flex;
+    gap: 100px;
+}
