@@ -12,6 +12,10 @@
 }
 
 .login__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding: 20px;
     /* border: 1px solid #ccc; */
     border-radius: 5px;
@@ -30,6 +34,14 @@
     position: relative;
     margin-top: 20px;
     cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+.customSelect p {
+    width: 100%;
+}
+
+.customSelect span {
+    float: right;
 }
 
 .selectedItem {
@@ -59,6 +71,7 @@
     align-items: center;
     cursor: pointer;
     background: gray;
+   
 }
 
 .dropdownItem:hover {
@@ -82,3 +95,27 @@
     /* margin-right: 100px; */
 
 } 
+.login__form input {
+    width: 450px;
+    height: 46px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    outline: none;
+}
+.input {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.name, .email {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.login__form label {
+    color: grey;
+}

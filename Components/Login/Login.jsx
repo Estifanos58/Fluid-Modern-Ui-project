@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import classes from './Login.module.css'; // Add custom CSS here
 import iphoneB from '../../src/assets/iphoneB.png'
+import { RiArrowDropDownLine } from "react-icons/ri";
 function Login() {
     const [data, setData] = useState([]);
     const [selectedCountry, setSelectedCountry] = useState(null);
@@ -36,21 +37,30 @@ function Login() {
             <div className={classes.login__form}>
                 <h1>Join the Fluid AI Waitlist Today!</h1>
                 <form action="">
-                    <input type="text" className={classes.name} placeholder="Your Name" />
-                    <input type="email" className={classes.email} placeholder="Your Email" />
+                    <div className={classes.input}>
+                        <div className={classes.name}>
+                            <label htmlFor="name">Name</label>
+                            <input type="text" id= 'name' className={classes.name} />
+                        </div>
+                        <div className={classes.email}>
+                            <label htmlFor="email">Email</label>
+                            <input type="email" id= 'email' className={classes.email}  />
+                        </div>
+                    </div>
+                    
 
                     <div className={classes.customSelect}>
                         <div className={classes.selectedItem} onClick={toggleDropdown}>
                             {selectedCountry ? (
                                 <>
                                     <img src={selectedCountry.flags.png} alt={selectedCountry.name.common} style={{ width: '20px', marginRight: '10px' }} />
-                                    <p style={{color:'black'}}>{selectedCountry.name.common}</p>
-                                    <span style={{color:'black'}}>drop</span>
+                                    <p style={{color:'#fff'}}>{selectedCountry.name.common}   <span style={{color:'#fff'}}><RiArrowDropDownLine size={30} /></span></p>
+                                  
                                 </>
                             ) : data.length > 0 && (<>
                                 <img src={data[0].flags.png} alt={data[0].name.common} style={{ width: '20px', marginRight: '10px' }} />
-                                <p style={{color:'black'}}>{data[0].name.common}</p>
-                                <p style={{color:'black'}}>drop</p>
+                                <p style={{color:'#fff'}}>{data[0].name.common}  <span style={{color:'#fff'}}><RiArrowDropDownLine  size={30}/></span></p>
+                               
                                 </>
                             )}
                         </div>
@@ -64,7 +74,7 @@ function Login() {
                                         onClick={() => handleSelectCountry(country)}
                                     >
                                         <img src={country.flags.png} alt={country.name.common} style={{ width: '20px', marginRight: '10px' }} />
-                                        <p style={{color:'black'}}>{country.name.common}</p>
+                                        <p style={{color:'#fff'}}>{country.name.common}</p>
                                     </div>
                                 ))}
                             </div>
