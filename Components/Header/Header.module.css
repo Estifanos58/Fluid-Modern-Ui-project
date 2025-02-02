@@ -1,5 +1,5 @@
 .header {
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
 }
 
@@ -201,10 +201,10 @@ left: 600px;
 }
 .center__Transform{
     position: absolute;
-    width: 750px;
+    width: 400px;
     margin-top: -700px;
     top: 1050px;
-    left: 650px;
+    left: 850px;
     transition: margin-top 1.5s ease-in-out;
     display: flex;
     flex-direction: column;

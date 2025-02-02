@@ -53,7 +53,7 @@ function Phone() {
                 <h1>Fluid AI: Simplify, Organize, and Achieve More</h1>
                 <p>In a world where daily tasks, communication, and goals often become overwhelming, Fluid AI offers an innovative solution. Combining advanced AI technology with a user-friendly interface, it brings together to-do lists, chats, saved items, and bucket lists into one seamless platform.</p>
             </div>
-            <div className={classes.left__content__four}></div>
+            {/* <div className={classes.left__content__four}></div> */}
         </div>
        
           <div>

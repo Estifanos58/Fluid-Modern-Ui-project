@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 function Header() {
-    const [size, setSize] = useState(600);
+    const [size, setSize] = useState(500);
     const [isFixed, setIsFixed] = useState(true); // Logo starts as fixed
     const [lastPosition, setLastPosition] = useState(0); // To keep track of where the logo was before it stops being fixed
     const [isTransform, setTransform] = useState(false);
@@ -19,7 +19,7 @@ function Header() {
         let howMuchScrolled = document.body.scrollTop || document.documentElement.scrollTop;
 
         // Shrink the logo size but ensure it doesn't go below 405px
-        const newSize = Math.max(600 - howMuchScrolled, 200);
+        const newSize = Math.max(500 - howMuchScrolled, 200);
         setSize(newSize);
         if (howMuchScrolled >= 300) {
             setIsUp(true);

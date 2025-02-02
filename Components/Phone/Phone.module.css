@@ -4,6 +4,7 @@
 
 .phone {
     display: flex;
+    width: 100%; /* will be updated */
 }
 .phone__left__side div:not(:first-child){
     display: flex;
@@ -20,7 +21,7 @@
  .right__content__2,
  .right__content__3,
  .right__content__4 {
-    height: 70vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,8 +36,11 @@
 }
 .top  h1{
     font-size: 3rem;
+    /* margin-left: 50px; */
+    margin: 0 auto;
     margin-bottom: 150px;
-    margin-left: 20px;
+    text-align: justify;
+    width: 70vw;
 }
 .top p {
     text-align: center;
@@ -44,26 +48,49 @@
     margin-bottom: 20px;
 }
 
- .left__content__one, .left__content__three h1{
+ .left__content__one h1 {
     font-size: 32px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-left: 10px;
  }
- .left__content__one, .left__content__three p{
+
+ .left__content__three h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+ }
+ .left__content__one p{
     font-size: 18px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-left: 10px;
  }
-.right__content__2 ,.right__content__4 h1{
+
+ .left__content__three p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+ }
+.right__content__2 h1{
     font-size: 32px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     margin-right: 10px;
 }
-.right__content__2, .right__content__4 p{
+
+.right__content__4 h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.right__content__2 p{
     text-align: left;
     font-size: 18px;
     margin-right: 10px;
 } 
+.right__content__4 p {
+    text-align: left;
+    font-size: 18px;
+    margin-right: 10px;
+}
 
   .imagecontainer {
     position: sticky;
@@ -72,7 +99,7 @@
   }
   
   .imagecontainer img {
-    height: 950px;
+    height: 1000px;
     /* max-width: 600px; */
     transition: opacity 0.5s ease;
   }
@@ -94,60 +121,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-/* .phone {
-    display: flex;
-}
-.phone__left__side div:not(:first-child){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-.left__content__one,
- .left__content__two, 
- .left__content__three, 
- .left__content__four,
- .right__content__1,
- .right__content__2,
- .right__content__3,
- .right__content__4 {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.phone__right__side div:not(:first-child){
-    height: 100vh;
-}
-.top {
-    width: 1000px;
-    margin: 0 auto;
-}
-.top  h1{
-    font-size: 5rem;
-    margin-bottom: 70px;
-}
-.top p {
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-.phone__center {
-    height: 4000px;
-
-}
-.phone__center img {
-   
-    margin-top: 0;
-} */
