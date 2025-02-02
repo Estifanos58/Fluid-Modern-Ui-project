@@ -34,7 +34,7 @@ function Phone() {
         };
     }, []);
   return (
-    <>
+    <div className={classes.main}>
     <div className={classes.top}>
                 <p>Our Features</p>
                 <h1>Fluid AI was born out of a desire to simplify and streamline modern life</h1>
@@ -62,14 +62,13 @@ function Phone() {
                 <img id="dynamicImage" src={currentImage} alt="Dynamic" />
             </div>
             <div className={classes.content}>
-                {/* <p>Scroll down to see the image change...</p> */}
                 {sections.map((section, index) => (
                     <div
                         key={section.id}
                         ref={(el) => (sectionRefs.current[index] = el)}
                         className={classes.section}
                     >
-                        {/* Section {section.id} */}
+                      
                     </div>
                 ))}
             </div>
@@ -87,7 +86,7 @@ function Phone() {
         </div>
         </div>
     </div>
-    </>
+    </div>
   )
 }
 
