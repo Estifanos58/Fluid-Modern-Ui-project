@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 import { BsThreeDotsVertical } from "react-icons/bs";
 
 function Header() {
-    const [size, setSize] = useState(800);
+    const [size, setSize] = useState(600);
     const [isFixed, setIsFixed] = useState(true); // Logo starts as fixed
     const [lastPosition, setLastPosition] = useState(0); // To keep track of where the logo was before it stops being fixed
     const [isTransform, setTransform] = useState(false);
@@ -19,7 +19,7 @@ function Header() {
         let howMuchScrolled = document.body.scrollTop || document.documentElement.scrollTop;
 
         // Shrink the logo size but ensure it doesn't go below 405px
-        const newSize = Math.max(800 - howMuchScrolled, 200);
+        const newSize = Math.max(600 - howMuchScrolled, 200);
         setSize(newSize);
         if (howMuchScrolled >= 300) {
             setIsUp(true);
@@ -35,9 +35,9 @@ function Header() {
             setIsFixed(true);  // Return to fixed if scrolled back up
             
         }
-        if (howMuchScrolled >= 700) {
+        if (howMuchScrolled >= 300) {
             setTransform(true);
-        } else if (howMuchScrolled < 700) {
+        } else if (howMuchScrolled < 300) {
             setTransform(false)
         }
     }
@@ -81,7 +81,7 @@ function Header() {
                     style={{ 
                         width: `${size}px`, 
                         position: isFixed ? 'fixed' : 'absolute', 
-                        top: isFixed ? '550px' : `${lastPosition}px`,  // When switching from fixed, keep it at the last scrolled position
+                        top: isFixed ? '350px' : `${lastPosition}px`,  // When switching from fixed, keep it at the last scrolled position
                         transition: 'width 0.2s ease' // Smooth shrink transition
                     }} 
                     src={logo} 

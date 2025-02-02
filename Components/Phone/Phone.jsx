@@ -55,17 +55,8 @@ function Phone() {
             </div>
             <div className={classes.left__content__four}></div>
         </div>
-        {/* <div className={classes.phone__center}>
-            <img src={img1} alt="" />
-            <img src={img2} alt="" />
-            <img src={img3} alt="" />
-            <img src={img4} alt="" />
-
-        </div> */}
+       
           <div>
-            {/* <div className="header">
-                <h1>Scroll Down to Change Image</h1>
-            </div> */}
             
             <div className={classes.imagecontainer}>
                 <img id="dynamicImage" src={currentImage} alt="Dynamic" />

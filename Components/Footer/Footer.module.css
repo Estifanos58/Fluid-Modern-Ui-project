@@ -8,12 +8,12 @@
 .footer p{
     color: grey;
     margin: 10px;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 500;
     line-height: 22px;
 }
 .footer__left img {
-    width: 207px;
+    width: 200px;
     margin-bottom: 20px;
 }
 .footer__right {

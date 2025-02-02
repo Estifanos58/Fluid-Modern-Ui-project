@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
 }
 .left__content__one,
  .left__content__two, 
@@ -16,7 +16,7 @@
  .right__content__2,
  .right__content__3,
  .right__content__4 {
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,18 +86,9 @@
     font-size: 18px;
     margin-right: 60px;
 } */
-body {
-    font-family: Arial, sans-serif;
-  }
+
   
-  .header {
-    height: 100vh;
-    background: #f8f9fa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+
   .imagecontainer {
     position: sticky;
     top: 0;
@@ -105,7 +96,7 @@ body {
   }
   
   .imagecontainer img {
-    height: 100%;
+    height: 90%;
     /* max-width: 600px; */
     transition: opacity 0.5s ease;
   }

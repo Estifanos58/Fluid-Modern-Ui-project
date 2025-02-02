@@ -10,9 +10,10 @@
     align-items: center;
     /* justify-content: space-between; */
     gap: 15px;
+    height: 100%;
 }
 .content {
-    height: 560px;
+    height: 80%;
     width: 560px;
     padding: 50px;
     display: flex;
@@ -23,13 +24,13 @@
 
 }
 .content p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 28.8px;
     width: 253.23px;
 }
 .content h1{
-    font-size: 56px;
+    font-size: 50px;
     font-weight: 400;
     line-height: 61.6px;
 }

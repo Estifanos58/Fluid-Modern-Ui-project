@@ -15,7 +15,8 @@
 }
 .background__container > img {
     width: 100vw;
-    height: 1500px;
+    /* height: 1500px; */
+    height: 1200px;
 }
 .nav {
     display: flex;
@@ -32,12 +33,14 @@
 }
 .nav a {
     text-decoration: none;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 1.3rem;
     color: #fff;
 }
 .content__container {
     position: absolute;
-    top: 900px;
+    font-size: 1rem;
+    top: 600px;
 }
 .content__Transform {
     overflow: unset;
@@ -49,20 +52,21 @@
 .left__top{
     position: absolute;
     top: 0px;
-    margin-left: -220px;
+    margin-left: -520px;
+    /* margin-left: -100px; */
     border-radius: 0 0 20px 20px;
     width: 214.46px;
     height: 278px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 56.61%, #000000 134.98%), url('/src/assets/image.png');  
 }
 .left__topTransform{
-    margin-left: 270px;
+    margin-left: 170px;
     border-radius: 0 0 20px 20px;
-    width: 214.46px;
-    height: 278px;
+    width: 210.46px;
+    height: 270px;
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 56.61%, #000000 134.98%), url('/src/assets/image.png');
     /* transform: translate(270px, 0px); */
-    transition: margin-left 1s ease-in-out; 
+    transition: margin-left 1.5s ease-in-out; 
     overflow: unset;
 }
 
@@ -74,7 +78,7 @@
 }
 .left__top__bar p {
     padding: 3px 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #fff;
     border-radius: 25px;
     background-color: hwb(26 65% 32% / 0.594);
@@ -83,7 +87,7 @@
    margin-bottom: 0;
    margin-top: 150px;
    padding: 0 15px;
-   font-size: 1.5rem;
+   font-size: 1.3rem;
 }
 .left__top > p {
     padding: 0 15px;
@@ -91,13 +95,13 @@
 }
 .car__insurance {
     position: absolute;
-    top: 240px;
+    top: 260px;
     left: -222px;
     margin-left: -222px;
 }
 .car__Transform {
     position: absolute;
-    top: 240px;
+    top: 280px;
     /* left: -100px; */
     margin-left: -100px;
     /* transform: translate(0px, 0px); */
@@ -115,7 +119,7 @@
 
 .car__Transform p {
     font-family: SF Pro Display;
-    font-size: 24.94px;
+    font-size: 20.94px;
     font-weight: 400;
     line-height: 29.93px;
     text-align: left;
@@ -124,7 +128,7 @@
 .kite__beach {
     position: absolute;
     top: 420px;
-    margin-left: -300px;
+    margin-left: -200px;
 }
 .kite__Transform {
     position: absolute;
@@ -190,30 +194,32 @@
 }
 .content__center {
 position: absolute;
-top: 500px;
-margin-top: 1000px;
+/* top: 1000px; */
+/* margin-top: 1000px; */
+/* display: none; */
 left: 600px;
 }
 .center__Transform{
     position: absolute;
     width: 750px;
-    margin-top: 0;
-    left: 600px;
-    transition: margin-top 1s ease-in-out;
+    margin-top: -700px;
+    top: 1050px;
+    left: 650px;
+    transition: margin-top 1.5s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .center__Transform h1 {
-    font-size: 6rem;
+    font-size: 3rem;
     font-weight: lighter;
 }
 .center__Transform button {
-    margin-top: 20px;
-    padding: 20px 40px;
+    margin-top: 15px;
+    padding: 15px 30px;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     border-radius: 40px;
     background-color: #fff;
     color: #000;
@@ -230,9 +236,9 @@ left: 600px;
 .content__top__Transform{
     position: absolute;
     top:-100;
-    margin-top: -250px;
-    margin-left: 1300px;
-    transition: margin-left 1s ease-in-out;
+    margin-top: -270px;
+    margin-left: 800px;
+    transition: margin-left 1.5s ease-in-out;
     z-index: 10;
     padding: 15px 25px;
     border-radius: 15px;
@@ -240,6 +246,11 @@ left: 600px;
     width: 282.18px;
     height: 93.54px;
     border: 1px solid #FFFFFF1A;
+
+}
+.content__top__Transform p {
+    font-size: 18px;
+    font-weight: lighter;
 }
 .kite__beach2{
     position: absolute;
@@ -248,9 +259,9 @@ left: 600px;
 }
 .kite2__Transform{
     position: absolute;
-    margin-top: -100px;
-    margin-left: 1500px;
-    transition: margin-left 1s ease-in-out;
+    margin-top: -170px;
+    margin-left: 900px;
+    transition: margin-left 1.5s ease-in-out;
     padding: 20px;
     border-radius: 20px;
     width: 282.18px;
@@ -265,9 +276,9 @@ left: 600px;
 }
 .book__Transform {
     position: absolute;
-    top: 130px;
-    margin-left: 1650px;
-    transition: margin-left 1s ease-in-out;
+    top: 430px;
+    margin-left: 650px;
+    transition: margin-left 1.5s ease-in-out;
     width: 158.31px;
     height: 51.15px;
     display: flex;
@@ -283,9 +294,9 @@ left: 600px;
 }
 .trip__Transform{
     position: absolute;
-    top: 200px;
-    margin-left: 1600px;
-    transition: margin-left 1s ease-in-out;
+    top: 300px;
+    margin-left: 800px;
+    transition: margin-left 1.5s ease-in-out;
     width: 158.31px;
     height: 51.15px;
     display: flex;
@@ -301,9 +312,9 @@ left: 600px;
 }
 .right__bous__Transform{
     position: absolute;
-    top: 270px;
-    margin-left: 1170px;
-    transition: margin-left 1s ease-in-out;
+    top: 400px;
+    margin-left: 900px;
+    transition: margin-left 1.5s ease-in-out;
     border-radius: 0 0 20px 20px;
     width: 285.46px;
     height: 289.9px;
