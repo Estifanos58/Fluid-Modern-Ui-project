@@ -13,27 +13,27 @@
 .left__side {
     width: 30%;
     /* height: 271px; */
-    margin-left: 30px;
+    margin-left: 10%;
 }
 .left__side h1 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 30.6px;
     margin-bottom: 20px;
 }
 .left__side p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 23.4px;
 }
 .right__side {
-    width: 70%;
+    width: 65%;
 }
 .item {
     margin: 10px;
 }
 .item p {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 22px;
     font-weight: 500;
     margin: 10px;

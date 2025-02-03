@@ -194,9 +194,6 @@
 }
 .content__center {
 position: absolute;
-/* top: 1000px; */
-/* margin-top: 1000px; */
-/* display: none; */
 left: 600px;
 }
 .center__Transform{
@@ -325,4 +322,75 @@ left: 600px;
 }
 .right__bous__Transform p:first-child {
     margin-top: 190px;
+}
+
+@media (max-width:843px){
+    .left__side__nav ul, .right__side__nav ul {
+        gap: 30px;
+    }
+    .left__topTransform {
+        margin-left: 80px;
+        width: 160.46px;
+        height: 200px;
+    }
+    .left__top__bar {
+        padding: 10px;
+    }
+    .left__top__bar p {
+        padding: 1px 5px;
+        font-size: 0.7em;
+       
+    }
+    .left__top h1 {
+       margin-top: 70px;
+       padding: 0 10px;
+       font-size: 1rem;
+    }
+    .left__top > p {
+        padding: 0 10px;
+
+    }
+    .kite__Transform {
+        margin-left: 0px;
+        width: 270.18px;
+        height: 155.96px;
+    }
+    .img__continer img {
+        width: 34px;
+    }
+    .event {
+        padding-top: 20px;
+    }
+    .flight__Tranform {
+        top: 650px;
+        margin-left: 70px;
+        width: 300px;
+        height: 200.19px;
+    }
+    .center__Transform{
+        width: 400px;
+        margin-top: -700px;
+        top: 1000px;
+        left: 500px;
+    }
+    .center__Transform h1 {
+        font-size: 2rem;
+    }
+    .center__Transform button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    .content__top__Transform{
+        top:50px;
+        margin-left: 340px;
+        width: 240.18px;
+        height: 70.54px;
+    
+    }
+    .kite2__Transform{
+        margin-top: -130px;
+        margin-left: 500px;
+        width: 250.18px;
+        height: 150.96px;
+    }
 }
